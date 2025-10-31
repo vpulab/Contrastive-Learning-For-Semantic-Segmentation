@@ -45,13 +45,13 @@ Our proposed method leverages the CARLA-4AGT dataset’s unique property: each s
 
 Our approach introduces a feature alignment module that extracts features from multiple layers of a segmentation model for two different appearances of the same scene and enforces their similarity using an alignment loss. This is combined with the standard cross-entropy loss for segmentation. The alignment can use various distance metrics (e.g., cosine similarity, MMD, L2). For UDA, the method also proposes a cross-domain MixUp, overlaying source and target images using semantic masks to further enhance feature alignment.
 
-![Feature Alignment](figures/feature_alignment.png)
+![Feature Alignment](figures/feature_alignment.jpg)
 
 This method enforces feature consistency across different appearances of the same scene by aligning features at multiple layers of the segmentation model. For each scene in CARLA-4AGT, the model extracts features from two images with different weather/illumination conditions but identical ground truth, and applies an alignment loss (e.g., cosine similarity, MMD, or L2) in addition to the standard segmentation loss. This encourages the model to learn appearance-invariant representations, improving generalization to new domains and conditions.
 
 We further extend this approach to Unsupervised Domain Adaptation (UDA) pipelines such as DAFormer and HRDA. Here, we use DACS-style MixUp to create two semantically aligned mixed images from different appearances of the same ground truth, providing richer and more diverse training samples for UDA. This combination of multi-level feature alignment and cross-appearance MixUp enables more robust and efficient generalization to new domains and challenging conditions, consistently outperforming standard synthetic data and training protocols in both UDA and DG settings.
 
-![Technique Overview](figures/technique.png)
+![Technique Overview](figures/technique.jpg)
 
 ## Citation
 
