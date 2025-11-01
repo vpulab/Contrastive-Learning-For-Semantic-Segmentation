@@ -7,7 +7,9 @@ Repository for the paper Leveraging Contrastive Learning for Semantic Segmentati
 This paper introduces a novel synthetic dataset that captures urban scenes under a variety of weather conditions, providing pixel-perfect, ground-truth-aligned images to facilitate effective feature alignment across domains. Additionally, we propose a method for domain adaptation and generalization that takes advantage of the multiple versions of each scene, enforcing feature consistency across different weather scenarios. Our experimental results demonstrate the impact of our dataset in improving performance across several alignment metrics, addressing key challenges in domain adaptation and generalization for segmentation tasks. This research also explores critical aspects of synthetic data generation, such as optimizing the balance between the volume and variability of generated images to enhance segmentation performance. Ultimately, this work sets forth a new paradigm for synthetic data generation and domain adaptation.
 
 ## Downloads
-Dataset can be downloaded from [here](https://link) (not ready yet)
+Dataset can be downloaded from [here](https://link) (upon acceptance)
+
+Code will be uploaded here upon acceptance.
 
 
 ## About the dataset
